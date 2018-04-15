@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<a &le; 1.8519<br/>samples = 100.0%<br/>value = [0.5, 0.5]<br/>class = hazardous>, fillcolor="#399de505"] ;
+1 [label=<om &le; 192.7797<br/>samples = 45.1%<br/>value = [0.0, 1.0]<br/>class = hazardous>, fillcolor="#399de5fe"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<w &le; 232.5309<br/>samples = 45.0%<br/>value = [0.0, 1.0]<br/>class = hazardous>, fillcolor="#399de5ff"] ;
+1 -> 2 ;
+3 [label=<e &le; 0.3496<br/>samples = 44.9%<br/>value = [0.0, 1.0]<br/>class = hazardous>, fillcolor="#399de5ff"] ;
+2 -> 3 ;
+4 [label="(...)", fillcolor="#C0C0C0"] ;
+3 -> 4 ;
+7 [label="(...)", fillcolor="#C0C0C0"] ;
+3 -> 7 ;
+10 [label=<samples = 0.0%<br/>value = [1.0, 0.0]<br/>class = not hazardous>, fillcolor="#e58139ff"] ;
+2 -> 10 ;
+11 [label=<samples = 0.1%<br/>value = [1.0, 0.0]<br/>class = not hazardous>, fillcolor="#e58139ff"] ;
+1 -> 11 ;
+12 [label=<w &le; -0.6757<br/>samples = 54.9%<br/>value = [0.9, 0.1]<br/>class = not hazardous>, fillcolor="#e58139e4"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+13 [label=<samples = 2.7%<br/>value = [0.0, 1.0]<br/>class = hazardous>, fillcolor="#399de5ff"] ;
+12 -> 13 ;
+14 [label=<i &le; 32.8734<br/>samples = 52.1%<br/>value = [0.95, 0.05]<br/>class = not hazardous>, fillcolor="#e58139f2"] ;
+12 -> 14 ;
+15 [label=<om &le; -12.83<br/>samples = 48.6%<br/>value = [1.0, 0.0]<br/>class = not hazardous>, fillcolor="#e58139fe"] ;
+14 -> 15 ;
+16 [label="(...)", fillcolor="#C0C0C0"] ;
+15 -> 16 ;
+17 [label="(...)", fillcolor="#C0C0C0"] ;
+15 -> 17 ;
+20 [label=<om &le; 160.0289<br/>samples = 3.6%<br/>value = [0.39, 0.61]<br/>class = hazardous>, fillcolor="#399de55b"] ;
+14 -> 20 ;
+21 [label="(...)", fillcolor="#C0C0C0"] ;
+20 -> 21 ;
+24 [label="(...)", fillcolor="#C0C0C0"] ;
+20 -> 24 ;
+}
